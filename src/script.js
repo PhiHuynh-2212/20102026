@@ -13,40 +13,40 @@ const esc=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&q
 
 /* ================= KỊCH BẢN ================= */
 const S=[
- {say:TO?'này <em>'+esc(TO)+'</em> ơi!':'này cậu ơi!', bars:1.1, mood:'wave', mode:'hero', bg:0, fx:{meteor:1}},
- {say:'tớ là <em>Nụ</em> — nàng tiên nhỏ của vườn hoa', bars:1.7, mood:'talk'},
- {say:'hôm nay tớ được giao một nhiệm vụ đặc biệt lắm đó…', bars:1.7, mood:'shy'},
- {say:'vì sắp đến ngày…', bars:1, mood:'talk'},
+ {say:TO?'Này <em>'+esc(TO)+'</em> ơi!':'Này cậu ơi!', bars:1.1, mood:'wave', mode:'hero', bg:0, fx:{meteor:1}},
+ {say:'Tớ là <em>Nụ</em> — nàng tiên nhỏ của vườn hoa', bars:1.7, mood:'talk'},
+ {say:'Hôm nay tớ được giao một nhiệm vụ đặc biệt lắm đó…', bars:1.7, mood:'shy'},
+ {say:'Vì sắp đến ngày…', bars:1, mood:'talk'},
  {scene:'date', mode:'side', say:'<em>20/10</em> rồi!', bars:1.7, mood:'happy', bg:2, fx:{petals:.7,meteor:1}},
 
- {scene:'history', say:'ngày 20/10/1930, Hội Phụ nữ phản đế Việt Nam ra đời', bars:2, mood:'talk', reveal:['h1','h2']},
- {say:'đã <em>'+YRS+'</em> năm trôi qua, và 20/10 thành ngày cả nước dành để tri ân phụ nữ', bars:2.3, mood:'talk', reveal:['h3','h4'], on(){countTo($('#yrs'),YRS,2200)}},
+ {scene:'history', say:'Ngày 20/10/1930, Hội Phụ nữ phản đế Việt Nam ra đời', bars:2, mood:'talk', reveal:['h1','h2']},
+ {say:'Đã <em>'+YRS+'</em> năm trôi qua, và 20/10 thành ngày cả nước dành để tri ân phụ nữ', bars:2.3, mood:'talk', reveal:['h3','h4'], on(){countTo($('#yrs'),YRS,2200)}},
 
- {scene:'heroes', say:'trong câu chuyện đất nước, có biết bao người phụ nữ phi thường…', bars:2, mood:'talk', bg:0, fx:{meteor:1.6}, reveal:['n1','l1','n2','l2','e12']},
- {say:'từ Hai Bà Trưng, Bà Triệu thuở dựng nước, đến những người con gái kiên cường của thế kỷ XX', bars:2.4, mood:'talk', reveal:['n3','l3','e23','n4','l4','e24','n5','l5','e35','e45']},
- {say:'và còn những người không có tên trong sách: bà, mẹ, chị, cô giáo… và cả <em>cậu</em> nữa', bars:2.4, mood:'happy', reveal:['n6','l6','e46','e56'], fx:{meteor:2.2,petals:.3}},
+ {scene:'heroes', say:'Trong câu chuyện đất nước, có biết bao người phụ nữ phi thường…', bars:2, mood:'talk', bg:0, fx:{meteor:1.6}, reveal:['n1','l1','n2','l2','e12']},
+ {say:'Từ Hai Bà Trưng, Bà Triệu thuở dựng nước, đến những người con gái kiên cường của thế kỷ XX', bars:2.4, mood:'talk', reveal:['n3','l3','e23','n4','l4','e24','n5','l5','e35','e45']},
+ {say:'Và còn những người không có tên trong sách: bà, mẹ, chị, cô giáo… và cả <em>cậu</em> nữa', bars:2.4, mood:'happy', reveal:['n6','l6','e46','e56'], fx:{meteor:2.2,petals:.3}},
 
- {scene:'unseen', say:'có những điều rất nhỏ mà phụ nữ vẫn lặng lẽ làm mỗi ngày…', bars:2, mood:'talk', bg:2, fx:{petals:.2}},
+ {scene:'unseen', say:'Có những điều rất nhỏ mà phụ nữ vẫn lặng lẽ làm mỗi ngày…', bars:2, mood:'talk', bg:2, fx:{petals:.2}},
  {say:'', bars:1.15, reveal:['c1']},
  {say:'', bars:1.15, reveal:['c2']},
  {say:'', bars:1.15, reveal:['c3']},
  {say:'', bars:1.4, reveal:['c4']},
- {say:'mà hiếm khi có ai nói lời cảm ơn', bars:1.8, mood:'shy'},
- {scene:'none', mode:'hero', say:'nên hôm nay, đến lượt <em>cậu</em> được quan tâm', bars:2, mood:'happy', fx:{petals:1.1}},
+ {say:'Mà hiếm khi có ai nói lời cảm ơn', bars:1.8, mood:'shy'},
+ {scene:'none', mode:'hero', say:'Nên hôm nay, đến lượt <em>cậu</em> được quan tâm', bars:2, mood:'happy', fx:{petals:1.1}},
 
- {say:'tớ xin gửi cậu bốn lời chúc nhé', bars:1.5, mood:'wave', bg:2},
- {scene:'health', mode:'side', say:'chúc cậu thật nhiều <em>sức khỏe</em> — để còn đi hết những nơi cậu muốn đến', bars:2.4, mood:'talk', bg:1, fx:{meteor:.6}},
- {scene:'peace', say:'chúc cậu <em>bình yên</em> — dù ngoài kia có ồn ào thế nào', bars:2.2, mood:'talk', bg:1},
- {scene:'free', say:'chúc cậu đủ <em>tự do</em> để làm điều mình thích, và đủ dũng cảm để theo đuổi nó', bars:2.5, mood:'talk', bg:0, fx:{lantern:1,meteor:.8}},
- {scene:'love', say:'chúc cậu luôn được <em>yêu thương</em> — đúng cách, đúng người, và cả bởi chính cậu', bars:2.5, mood:'happy', bg:2, fx:{hearts:1,petals:.3}},
+ {say:'Tớ xin gửi cậu bốn lời chúc nhé', bars:1.5, mood:'wave', bg:2},
+ {scene:'health', mode:'side', say:'Chúc cậu thật nhiều <em>sức khỏe</em> — để còn đi hết những nơi cậu muốn đến', bars:2.4, mood:'talk', bg:1, fx:{meteor:.6}},
+ {scene:'peace', say:'Chúc cậu <em>bình yên</em> — dù ngoài kia có ồn ào thế nào', bars:2.2, mood:'talk', bg:1},
+ {scene:'free', say:'Chúc cậu đủ <em>tự do</em> để làm điều mình thích, và đủ dũng cảm để theo đuổi nó', bars:2.5, mood:'talk', bg:0, fx:{lantern:1,meteor:.8}},
+ {scene:'love', say:'Chúc cậu luôn được <em>yêu thương</em> — đúng cách, đúng người, và cả bởi chính cậu', bars:2.5, mood:'happy', bg:2, fx:{hearts:1,petals:.3}},
 
- {scene:'none', mode:'hero', say:'cậu không cần phải hoàn hảo đâu', bars:1.6, mood:'talk', fx:{petals:.8}},
- {say:'cậu đẹp ở cách cậu cố gắng, cách cậu cười, và cách cậu thương người khác', bars:2.4, mood:'shy'},
+ {scene:'none', mode:'hero', say:'Cậu không cần phải hoàn hảo đâu', bars:1.6, mood:'talk', fx:{petals:.8}},
+ {say:'Cậu đẹp ở cách cậu cố gắng, cách cậu cười, và cách cậu thương người khác', bars:2.4, mood:'shy'},
 
- {scene:'gift', mode:'side', say:'tớ tặng cậu bó hoa này nè', bars:1.8, mood:'happy', bg:3, fx:{petals:1,meadow:1.1}},
- {say:'một loài hoa không bao giờ héo — vì mỗi cánh là một lời yêu thương', bars:2.4, mood:'talk'},
+ {scene:'gift', mode:'side', say:'Tớ tặng cậu bó hoa này nè', bars:1.8, mood:'happy', bg:3, fx:{petals:1,meadow:1.1}},
+ {say:'Một loài hoa không bao giờ héo — vì mỗi cánh là một lời yêu thương', bars:2.4, mood:'talk'},
 
- {scene:'question', mode:'hero', say:'cho tớ hỏi một câu thôi nhé…<br>hôm nay cậu đã <em>khen bản thân</em> chưa?', bars:2, mood:'wink', bg:2, fx:{petals:.3,meteor:1}, wait:true, reveal:['q1']},
+ {scene:'question', mode:'hero', say:'Cho tớ hỏi một câu thôi nhé…<br>Hôm nay cậu đã <em>khen bản thân</em> chưa?', bars:2, mood:'wink', bg:2, fx:{petals:.3,meteor:1}, wait:true, reveal:['q1']},
  {scene:'final', mode:'side', say:'', mood:'happy', bg:3, fx:{fire:1,petals:.9,meadow:1.5}, wait:true, final:true}
 ];
 
@@ -127,16 +127,16 @@ $('#q1').addEventListener('click',e=>{
   waiting=false; $('#q1').classList.remove('on');
   mood('happy'); talk(true);
   if(b.dataset.a==='yes'){
-    say('giỏi quá! cứ khen thật nhiều vào nhé — cậu xứng đáng mà');
+    say('Giỏi quá! Cứ khen thật nhiều vào nhé — cậu xứng đáng mà');
   } else {
-    say('vậy để tớ khen giúp: cậu <em>mạnh mẽ</em> hơn cậu nghĩ, <em>dịu dàng</em> hơn cậu tưởng, và quan trọng hơn cậu vẫn nghĩ rất nhiều');
+    say('Vậy để tớ khen giúp: Cậu <em>mạnh mẽ</em> hơn cậu nghĩ, <em>dịu dàng</em> hơn cậu tưởng, và quan trọng hơn cậu vẫn nghĩ rất nhiều');
   }
   clearTimeout(timer); timer=setTimeout(()=>go(idx+1), snap(4.4*BAR));
 });
 
 function setupFinal(){
   const to=TO||'';
-  $('#f-to').textContent = to ? 'gửi '+to+(FROM?' · từ '+FROM:'') : 'gửi người phụ nữ tuyệt vời'+(FROM?' · từ '+FROM:'');
+  $('#f-to').textContent = to ? 'Gửi '+to+(FROM?' · từ '+FROM:'') : 'Gửi người phụ nữ tuyệt vời'+(FROM?' · từ '+FROM:'');
   if(location.protocol.startsWith('http')) $('#b-link').hidden=false;
 }
 $('#b-link').addEventListener('click',()=>{
