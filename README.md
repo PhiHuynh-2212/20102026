@@ -7,22 +7,22 @@ Dự án web hoạt họa tương tác tri ân và chúc mừng **Ngày Phụ N�
 ## 📸 Hình ảnh minh họa (Screenshots)
 
 <div align="center">
-  <img src="assets/preview.png" alt="Màn hình mở đầu - Hộp quà 20/10" width="85%">
-  <p><em>Màn hình mở đầu tương tác: "Có một món quà nhỏ cho ngày 20/10"</em></p>
+  <img src="assets/preview.png" alt="Màn hình mở đầu - Chạm để mở quà" width="85%">
+  <p><em>Ảnh đầu: Màn hình mở đầu tương tác — "Có một món quà nhỏ cho ngày 20/10"</em></p>
 </div>
 
 <br>
 
 <div align="center">
-  <img src="assets/scene.png" alt="Nhân vật Nụ dẫn dắt câu chuyện" width="85%">
-  <p><em>Nhân vật hoạt hình "Nụ" dẫn dắt lời chúc và cốt truyện</em></p>
+  <img src="assets/scene.png" alt="Cảnh giữa - Chòm sao các nữ anh hùng dân tộc" width="85%">
+  <p><em>Ảnh giữa: Chòm sao tri ân các vị nữ anh hùng dân tộc cùng nhân vật hoạt hình "Nụ"</em></p>
 </div>
 
 <br>
 
 <div align="center">
-  <img src="assets/wishes.png" alt="Không gian tri ân phụ nữ Việt Nam" width="85%">
-  <p><em>Hiệu ứng đồ họa sao trời, cánh hoa rơi và câu chuyện tri ân</em></p>
+  <img src="assets/wishes.png" alt="Màn hình kết bài - Thiệp chúc mừng 20/10" width="85%">
+  <p><em>Ảnh cuối: Thiệp kết bài bung nở — "Chúc mừng ngày Phụ nữ Việt Nam 20 · 10"</em></p>
 </div>
 
 ---

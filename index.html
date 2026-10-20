@@ -608,6 +608,7 @@ button{touch-action:manipulation;-webkit-appearance:none;appearance:none}
 <script>
 (()=>{
 'use strict';
+window._go = (n)=>go(n);
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const BAR=1950;                       // thời lượng đọc gốc (ms) của 1 "bar" kịch bản
 const BPM=76.5, BEAT=60000/BPM, OFF=450;   // Từng Ngày Yêu Em: nhịp & độ lệch pha (ms)
